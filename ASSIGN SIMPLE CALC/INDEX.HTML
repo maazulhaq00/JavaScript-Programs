@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <div id="calc">
+       <div>
+         <input type="text" id="result" placeholder="0" style="height: 50px;width: 450px;">
+    </div>
+   
+    <div>
+        <button id="orange" class ="orange" onclick="getInput('(')">(</button>
+        <button id="orange" class ="orange" onclick="getInput(')')">)</button>
+        <button id="del-btn" onclick="del()">Del</button>
+        <button id="ac-btn" onclick="clr()">AC</button>
+    </div>
+    <div>
+        <button id="btn" onclick="getInput('7')">7</button>
+        <button id="btn" onclick="getInput('8')">8</button>
+        <button id="btn" onclick="getInput('9')">9</button>
+        <button id="btn1" onclick="getInput('/')" class="orange">/</button>
+    </div>
+    <div>
+        <button id="btn" onclick="getInput('4')">4</button>
+        <button id="btn" onclick="getInput('5')">5</button>
+        <button id="btn" onclick="getInput('6')">6</button>
+        <button id="btn1" onclick="getInput('*')" class="orange">x</button>
+    </div>
+    <div>
+        <button id="btn" onclick="getInput('1')">1</button>
+        <button id="btn" onclick="getInput('2')">2</button>
+        <button id="btn" onclick="getInput('3')">3</button>
+        <button id="btn1" onclick="getInput('-')" class="orange">-</button>
+    </div>
+    <div>
+        <button id="btn" onclick="getInput('0')">0</button>
+        <button id="btn" onclick="getInput('.')">.</button>
+        <button id="equalsto-btn" onclick="calculate()">=</button>
+        <button id="btn1" onclick="getInput('+')" class="orange">+</button>
+    </div>
+</div>
+    <script src="app.js"></script>
+</body>
+</html>
