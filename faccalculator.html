@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial Calculator</title>
+</head>
+<body>
+    <label for="">
+        Enter a number
+        <input type="number" name="num" id="num">
+    </label>
+    <button onclick="calfact()">Calculate factorial</button>
+
+    <h3 id="fact">
+
+    </h3>
+</body>
+<script>
+    function calfact(){
+        let num = +document.getElementById("num").value
+
+        let fact = 1
+        for(let i = 1; i<=num; i++){
+            fact*=i  //fact = fact * i 
+
+        }
+        document.getElementById("fact").innerHTML= "The factorial of "+ num + " " +"is"+ " " + fact
+    }
+</script>
+</html>
