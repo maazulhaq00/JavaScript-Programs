@@ -1,0 +1,46 @@
+.cal{
+    width: 520px;
+    padding: 20px;
+     margin: 50px auto;
+     background-color: rgb(249, 179, 153);
+     border-radius: 20px;
+     box-shadow: 7px 7px 7px gray
+}
+#result{
+    width: 460px;
+    height: 70px;
+    font-size: 60px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 10px 10px 10px 14px;
+    padding: 4px 4px 4px 12px;
+    box-shadow: -3px -3px 4px gray;
+}
+#btn, #del-btn, #ac-btn, #equalsto-btn{
+    width: 92px;
+    height: 76px;
+    background-color: rgb(66, 218, 248);
+    color: black;
+    border-radius: 8px;
+    margin: 15px;
+    padding: 6px;
+    font-size: 50px;
+    font-weight: bolder;
+    box-shadow:  4px 4px 2px gray;
+}
+#del-btn{
+    color: white;
+    background-color: black;
+}
+
+#ac-btn{
+    background-color: rgb(251, 23, 23);
+    color: white;
+}
+#equalsto-btn{
+    background-color: rgb(3, 74, 3);
+    color: white;
+}
+.gray{
+    background-color: rgba(128, 128,128, 0.3) !important;
+}
