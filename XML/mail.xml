@@ -1,0 +1,14 @@
+<mail>
+    <from>
+        <name>Ali</name>
+        <email>Ali@gmail.com</email>
+    </from>
+    <to>
+        <name>Sarah</name>
+        <email>sarah@gmail.com</email>
+    </to>
+    <subject>Annual picnic 2023</subject>
+    <body>The annual picnic is scheduled from 17th augest 2023.
+        for more info contact admin
+    </body>
+</mail>

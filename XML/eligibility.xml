@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<votingMachine>
+    <eligibilty>age &gt; 18 </eligibilty>
+    <eligibilty>age &lt;; 60 </eligibilty>
+
+    <nationality>&quot;Pakistani&quot;</nationality>
+
+    <candidate>
+        <name>Arif Alvi</name>
+        <party>&apos;PTI&apos;</party>
+    </candidate>
+    <candidate>
+        <name>Bilawal Bhutto</name>
+        <party>&apos;PPP&apos;</party>
+    </candidate>
+    <candidate>
+        <name>Sheikh Rasheed</name>
+        <party>&apos;AML&apos;</party>
+    </candidate>
+
+    <constituency>PP-80 &amp; PP-81</constituency>
+</votingMachine>
