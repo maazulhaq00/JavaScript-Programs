@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">
+        Enter a base of triangle
+        <input type="number" id="b" name="b">
+    </label>
+    <label for="">
+        Enter a height of triangle
+        <input type="number" id="h" name="h">
+    </label>
+    <button onclick="calcArea()">Calculate Area</button>
+<h4 id="area"></h4>
+
+</body>
+    <script>
+        function calcArea(){
+            let b = document.getElementById("b").value
+            let h = document.getElementById("h").value
+        
+            let area = (b*h)/2
+        
+            document.getElementById("area").innerHTML = "The Area of triangle is " + area + "Square units"
+        }
+
+    </script>
+</html>

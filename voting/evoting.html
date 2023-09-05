@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>
+        E-VOTING
+    </h3>
+</body>
+<script>
+    let countCandA = 0
+    let countCandB = 0
+    let countCandC = 0
+
+    while (true) {
+        let op = prompt("Do you want to cast your vote (y/n) ?")
+
+        if (op == "y") {
+            let age = +prompt("Enter your age:");
+            if (age >= 18) {
+                let vote = prompt("Enter 1 to vote A, 2 to vote B, 3 to vote C")
+
+                if (vote == "1") {
+                    alert("thankyou for voting A")
+                    countCandA++
+                }
+
+                else if (vote == "2") {
+                    alert("thankyou for voting B")
+                    countCandB++
+                }
+
+                else if (vote == "3") {
+                    alert("thankyou for voting C")
+                    countCandC++
+                }
+
+                else {
+                    alert("Invalid input vote not casted!")
+                }
+            }
+            else {
+                alert("you are not eligible for vote")
+            }
+
+        }
+        else if (op == "n") {
+            alert("RESULT \ncandidateA:"
+                + countCandA + "\ncandidateB:" + countCandB +
+                "\ncandidateC:" + countCandC)
+                break;
+        }
+        else(
+            alert("Invalid input")
+        )
+
+    }
+</script>
+
+</html>
