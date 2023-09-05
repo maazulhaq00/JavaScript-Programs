@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>learning Xml Dom & XmlhttpsReq</h3>
+
+    <button onclick="loadXML()">Generate Flower Table</button>
+
+    <table id="flowertable" border="1" width="100%">
+
+    </table>
+
+</body>
+<script>
+    let XMLDoc;
+
+    function loadXML(){
+        let xhttp = new XMLHttpRequest()
+
+        xhttp.onreadystatechange = function(){
+            if(this.readyState == 4 && this.status == 200){
+
+                XMLDoc = this.responseXML;
+
+                showflowertable()
+
+                console.log(XMLDoc)
+            }
+        }
+
+        xhttp.open("GET", "flowers.xml", true);
+        xhttp.send()
+    }
+
+    function showflowertable(){
+        let flowerstable = document.getElementById("flowertable")
+
+        flowerstable.innerHTML = ` <tr>
+            <th>flower</th>
+            <th>price</th>
+        </tr>`
+
+        let length = XMLDoc.getElementsByTagName('flower').length;
+
+        for(let i = 0; i < length; i++){
+
+            flowerstable.innerHTML += ` <tr>
+                <td>${XMLDoc.getElementsByTagName("name")[i].childNodes[0].nodeValue}</td>
+                <td>${XMLDoc.getElementsByTagName("price")[i].childNodes[0].nodeValue}</td>
+            </tr>`
+        }
+    }
+</script>
+</html>

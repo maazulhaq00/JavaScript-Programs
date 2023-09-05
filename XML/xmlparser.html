@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="para"></p>
+    <ul id="mylist">
+
+    </ul>
+</body>
+
+<script>
+    let text = `
+    <friendsList>
+    <friend>
+        <name>Abdul Rehman</name>
+    </friend>
+    <friend>
+        <name>safwan</name>
+    </friend>
+    <friend>
+        <name>Saad</name>
+    </friend>
+    <bestfriend>
+        <name>Noraiz</name>
+    </bestfriend>
+        </friendsList>
+`
+
+    let parser = new DOMParser();
+
+    let xmlDoc = parser.parseFromString(text, 'text/xml')
+
+    console.log(text)
+
+    console.log(xmlDoc.getElementsByTagName("name")[1].childNodes[0].nodeValue)
+
+  //  document.getElementById("para").innerHTML = xmlDoc.getElementsByTagName("name")[1].childNodes[0].nodeValue;
+
+    let len =  xmlDoc.getElementsByTagName("name").length
+
+    for(let i = 0; i < len; i++){
+        document.getElementById("mylist").innerHTML += "<li>"+ xmlDoc.getElementsByTagName("name")[i].childNodes[0].nodeValue +"</li>"
+    }
+</script>
+
+</html>
