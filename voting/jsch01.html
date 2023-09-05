@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function getPositiveArray(array){
+        let posArray = []
+        for(let i = 0; i < array.length; i++){
+            if(array[i] >= 0){
+                posArray.push(array[i])
+            }
+        }
+
+        return posArray
+
+    }
+    let myArr = [0 , -3 , 99 , -65 , -87 , 33]
+    let PositiveArray = getPositiveArray(myArr)
+    console.log(PositiveArray)
+
+    let myArr2 = [9 , 8  , 6  ,3,6,23,-7,-76,35,-23,5,-32]
+    let posArr2 = getPositiveArray(myArr2)
+    console.log(posArr2)
+
+</script>
+</html>
