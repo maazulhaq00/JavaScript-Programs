@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="head"></h1>
+</body>
+<script>
+    let percent = +prompt("Enter percent")
+    
+    let grade = document.getElementById("head")
+
+    if(percent>=85){
+        grade.innerHTML = "A-ONE"
+    }
+    else if(percent>=80){
+        grade.innerHTML = "A"
+    }
+    else if(percent>=75){
+        grade.innerHTML = "B"
+    }
+    else if(percent>=70){
+        grade.innerHTML = "C"
+    }
+    else if(percent>=65){
+        grade.innerHTML = "D"
+    }
+    else if(percent>=60){
+        grade.innerHTML = "E"
+    }
+    else{
+        grade.innerHTML = "F"
+    }
+</script>
+</html>
