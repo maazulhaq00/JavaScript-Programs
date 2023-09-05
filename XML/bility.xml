@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<votingMachine>
+    <eligbility>age &gt; 10</eligbility>
+    <eligbility>age &gt; 60</eligbility>
+
+    <nationality> &quot;pakistan&quot; </nationality>
+
+    <canidate>
+        <name>noraiz</name>
+        <party>&apos;TLP</party>
+    </canidate>
+    <canidate>
+        <name>Maaz</name>
+        <party>&apos;pit</party>
+    </canidate>
+    <canidate>
+        <name>saud</name>
+        <party>&apos;PPP</party>
+    </canidate>
+
+    <constituency>PP-80 &amp; pp-81</constituency> 
+</votingMachine>

@@ -1,0 +1,17 @@
+<!--  
+    Ali (ali@gmail.com) write a mail to sarah (sarah@gmail.com)  regarding "Annual picnic 2023"
+    The mail reads: "The Annual picnic is scheduled forn 17th August. for more info contact admin"
+  -->
+
+  <mail>
+    <form>
+      <name>ali</name>
+      <email>ali@gmail.com</email>
+    </form>
+    <to>
+      <name>sarah</name>
+      <email>sarah@gmail.com</email>
+    </to>
+    <subject>Annual picnic 2023</subject>
+    <body>The Annual picnic is scheduled forn 17th August. for more info contact admin</body>
+  </mail>
