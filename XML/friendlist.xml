@@ -1,0 +1,24 @@
+<!-- i have several friends. sabtain, abdullah, saud are my friends. goharyab is my best friend  -->
+
+<!DOCTYPE friendslist [
+
+   <!ELEMENT friendslist (friend*, bestfriend) >
+   <!ELEMENT friend (name) >
+   <!ELEMENT bestfriend (name) >
+   <!ELEMENT name (#PCDATA) >
+]>
+
+<friendslist>
+   <friend>
+    <name>sabtain</name>
+   </friend>
+   <friend>
+    <name>abdullah</name>
+   </friend>
+   <friend>
+    <name>saud</name>
+   </friend>
+   <bestfriend>
+    <name>goharyab</name>
+   </bestfriend>
+</friendslist>
