@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>example-11</title>
+</head>
+
+<body>
+   
+    <!-- JSON FILES IN JS  -->
+    <h2>Example 11</h2>
+    <h3>JSON FILES IN JS</h3>
+    <p id="migrantBirds"></p>
+    <br><br>
+    
+
+    <div class="line"></div>
+
+
+</body>
+<script>
+        
+        //JSON FILES IN JS 
+                    var obj = JSON.parse('{"Name" : "White Stork" , "Species" : "Bird" , "Type" : "Migrant"}');
+                    document.getElementById("migrantBirds").innerHTML=
+                    obj.Name + ", " + obj.Species + ", " + obj.Type;
+
+
+</script>
+</html>

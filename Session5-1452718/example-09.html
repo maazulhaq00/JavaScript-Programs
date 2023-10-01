@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>example-9</title>
+</head>
+
+<body>
+
+    <ul id="writting-tools">
+        <li>Pen</li>
+        <li>Pencil</li>
+        <li id="cp">Color Pencils</li>
+    </ul>
+    <p>Click the button to delete an item of the list.</p>
+    <button onclick="myMethodDel()">Delete</button><br><br>
+
+
+</body>
+<script>
+   
+    function myMethodDel(){
+        var ele = document.getElementById("cp");
+        ele.parentNode.removeChild(ele)
+    }
+
+</script>
+</html>

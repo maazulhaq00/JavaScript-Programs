@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examples-5 </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-color: rgb(255, 255, 255);">
+
+
+   <div class="container">
+    <h1>document.querySelectorAll() Method</h1><br>
+    <h2>Finding Html Elements By querySelector</h2> 
+    <p class="introquerySelec">This example Demonstrate the <b>"document.querySelectorAll()"</b> method.</p>
+    <p id="demoquerySelec"></p>
+   </div>
+
+
+</body>
+<script>
+  
+   var y = document.querySelectorAll("p.introquerySelec");
+   document.getElementById("demoquerySelec").innerHTML='The para with class introquerySelec is  ' + y[0].innerHTML;
+
+   
+</script>
+</html>

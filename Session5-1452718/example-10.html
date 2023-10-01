@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>example-10</title>
+</head>
+
+<body>
+    <!--DOM -->
+    <h2>Example 10</h2>
+    <h3>Events with html DOM</h3>
+    <div onmouseover="mOver(this)" onmouseout="mOut(this)" style="background-color: #D94A38;width: 120px;height: 20px;padding: 40px;">Mouse Over Me</div>
+
+</body>
+<script>
+         //DOM
+                function mOver(obj){
+                    obj.innerHTML = "Cursor is on div"
+                }
+                function mOut(obj){
+                    obj.innerHTML = "Bring Cursor Here"
+                }
+
+       
+</script>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>example-8</title>
+</head>
+<style>
+
+</style>
+<body>
+
+    <ul id="writting-tool">
+        <li>Pen</li>
+        <li>Pencil</li>
+    </ul>
+    <p>Click the button to append an item to the end of the list.</p>
+    <button onclick="myMethod()">Append</button><br><br>
+
+</body>
+<script>
+   
+    function myMethod(){
+        var node = document.createElement("li");
+        var textnode = document.createTextNode("Color pencils");
+        node.appendChild(textnode);
+        document.getElementById("writting-tool").appendChild(node);
+    }
+
+
+</script>
+</html>
