@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="migrantbirds"></p>
+    <p id="migrantbird"></p>
+
+</body>
+<script>
+    Obj = JSON.parse('{"Name":"White Stork","Species":"Bird", "Type":"Migrant"}');
+    document.getElementById("migrantbirds").innerHTML = Obj.Name  + ", " + Obj.Species + ", " + Obj.Type;
+    Obj =toconvert = {Name:"White Stork", Species:"Bird", Type:"Migrant"};
+    //JSON stringify method
+    toJSON = JSON.stringify(toconvert);
+    document.getElementById("migrantbird").innerHTML = toJSON;
+
+</script>
+</html>
