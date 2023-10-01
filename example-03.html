@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Example 03</title>
+</head>
+<style>
+     body{
+        background: url(https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/rm378-09-x.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=dc095aeb8ad2929b3b13b7ba25fa42ff) no-repeat;
+        background-size: cover;
+
+    }
+    .container{
+        margin: 10px auto;
+        width: 500px;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.247);
+        height: 550px;
+        border-radius: 10px;
+        margin-top: 80px;
+        align-content: center;
+        color: rgb(255, 255, 255);
+        box-shadow: 0px 7px 5px 8px  rgba(0, 0, 0, 0.767);
+    }
+    h1{
+        padding-top: 50px;
+    }
+</style>
+<body style="background-color: rgb(255, 255, 255);">
+    <div class="container">
+        <h1>"Method of getElementByTagName"</h1><br>
+   <h2>Finding Html Elements By TagName</h2> 
+   <p id="intro">Hello Script!</p>
+   <p>This example Demonstrate the <b>"getElementByTagName"</b> method.</p>
+   <p id="demo"></p>
+   <br>
+
+   <h2>Khud se kara hai bhaii ab !</h2> 
+   <p id="intro2">Hello Bhaii!</p>
+   <p>This example Demonstrate the <b>"getElementByTagName" </b> method.</p>
+   <p id="demo2"></p>
+  
+
+   </div>
+</body>
+<script>
+    var x = document.getElementsByTagName("p");
+    document.getElementById("demo").innerHTML='The text in first para (index 0) is : ' + x[0].innerHTML;
+
+    var y = document.getElementsByTagName("p") ;
+    document.getElementById("demo2").innerHTML='The text is : ' + y[0].innerHTML;
+
+    
+</script>
+</html>

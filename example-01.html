@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>example-01</title>
+</head>
+<style>
+    body {
+        background: url(https://img.freepik.com/premium-photo/pair-blue-tennis-shoes-are-wooden-floor-with-basketball-tennis-ball_235573-4086.jpg) no-repeat;
+        background-size: cover;
+    }
+
+    .container {
+        background-color: rgba(0, 0, 0, 0.479);
+        width: 300px;
+        height: 500px;
+        margin: 20px auto;
+        text-align: center;
+        color: white;
+        border-radius: 20px;
+    }
+
+    h3 {
+        margin: 30px;
+        padding-top: 30px;
+        margin-top: 80px;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+</style>
+  
+<body>
+    <div class="container">
+        <h3>Click on the players name to see their sport name!</h3>
+        <a href="#" onclick="getSport(this)" data-sport-name="Football">Ronaldo</a><br><br>
+        <a href="#" onclick="getSport(this)" data-sport-name="Tennis">Federer</a><br><br>
+        <a href="#" onclick="getSport(this)" data-sport-name="Cricket">Babar Azam</a><br><br>
+        <a href="#" onclick="getSport(this)" data-sport-name="Football">Lionel Messi</a><br><br>
+        <a href="#" onclick="getSport(this)" data-sport-name="Circket">Shadab</a><br><br>
+        <a href="#" onclick="getSport(this)" data-sport-name="Football">Pele</a><br><br>
+        <a href="#" onclick="getSport(this)" data-sport-name="Tennis">Novak Djokovic</a><br><br>
+        <a href="#" onclick="getSport(this)" data-sport-name="Golf">Tiger Woods</a><br><br>
+        <a href="#" onclick="getSport(this)" data-sport-name="Basket Ball">LeBron Raymone James Sr</a><br><br>
+        <a href="#" onclick="getSport(this)" data-sport-name="Football">Neymar</a><br><br>
+    </div><br><br>
+</body>
+<script>
+    function getSport(sport) {
+        var sportName = sport.getAttribute("data-sport-name");
+        alert(sportName)
+    }
+</script>
+
+</html>

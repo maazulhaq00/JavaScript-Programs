@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examples-4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: rgb(255, 255, 255);">
+
+
+    <div class="container">
+        <h1>"Method of getElementByClassName"</h1>
+   <h2>Finding Html Elements By ClassName</h2> 
+   <p class="intro">Hello Script!</p>
+   <p>This example Demonstrate the <b>"getElementByClassName"</b> method.</p>
+   <p id="demo"></p>
+   </div>
+ 
+
+
+</body>
+<script>
+   var x = document.getElementsByClassName("intro");
+   document.getElementById("demo").innerHTML='The para is with class intro '+x[0].innerHTML;
+
+</script>
+</html>
