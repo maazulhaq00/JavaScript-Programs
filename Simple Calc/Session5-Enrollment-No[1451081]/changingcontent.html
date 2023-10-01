@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="para">Hello Script! </p>
+    <img id="myImage" src="https://i.insider.com/62cde14c114c1e0018734719?width=750&format=jpeg&auto=webp" >
+    <p id="paraa">Hello Script</p>
+    <p>The paragraph above was changed by a script</p>
+</body>
+<script>
+    //element.innerhtml
+    document.getElementById("para").innerHTML = "New text!"
+    //setAttribute
+    document.getElementById("myImage").innerHTML = "landscape.jpg"
+    //style prpoerty
+    document.getElementById("paraa").style.color = "red"
+</script>
+</html>
