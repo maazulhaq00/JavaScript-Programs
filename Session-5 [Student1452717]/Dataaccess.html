@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> </title>
+</head>
+<body>
+    <h2>Introduction to Data Access</h2>
+</body>
+<script>
+    function getSport(sport){
+        var sportName = sport.getAttribute("data-sport-name");
+               alert(sportName);
+    }
+</script>
+<a href="#"onClick="getSport(this)"data-sport-name= "FootBall">Ronaldo</a>
+<a href="#" onClick="getSport(this)"data-sport-name= "Tennis">Federer</a>
+</html>
