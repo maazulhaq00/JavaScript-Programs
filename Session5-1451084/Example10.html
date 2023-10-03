@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <ul id="writingTools">
+        <li>Pen</li>
+        <li>Pencil</li>
+        <li>Colour pencils</li>
+        <li id="markers">Markers</li>
+    </ul>
+
+    <p>Click the button to delete an item to the end of of the list.</p>
+    <button onclick="remove()">Delete</button>
+
+    <script>
+
+        function remove() {
+            var b = document.getElementById("markers");
+            b.parentNode.removeChild(b)
+        }
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <ul id="writingTool">
+        <li>Pen</li>
+        <li>Pencil</li>
+    </ul>
+
+    <p>Click the button to append an item to the end of of the list.</p>
+    <button onclick="append()">Append</button>
+
+    <script>
+
+        function append() {
+            var node = document.createElement("li");
+            var textNode = document.createTextNode("Colour Pencils");
+            node.appendChild(textNode);
+            document.getElementById("writingTool").appendChild(node)
+        }
+
+    </script>
+
+</body>
+</html>
