@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: rgb(231, 205, 255);
+            color: black;
+            width: 120px;
+            height: 20px;
+            padding: 40px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">Mouse Over</div>
+
+    <script>
+
+        function mouseOver(obj){
+            obj.innerHTML = "Cursor is on div"
+        }
+
+        function mouseOut(obj){
+            obj.innerHTML = "Bring Cursor here"
+        }
+
+    </script>
+
+</body>
+</html>
