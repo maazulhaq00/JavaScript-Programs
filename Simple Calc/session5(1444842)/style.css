@@ -1,0 +1,94 @@
+*{
+    margin-top:0 ;
+    padding:0 ;
+    font-family: sans-serif;
+}
+body{
+    background-color:palevioletred;
+}
+a{
+    margin-top: 50px;
+    font-size: 2rem;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: #fff;
+    
+
+}
+div{
+    background: border-box;
+    color: #fff;
+    border-radius: 50px;
+    padding-left: 500px;
+    margin-top: 200px;
+    
+}
+#para{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: #fff;
+    font-size: 2rem;
+    margin-top: 50px;
+}
+img{
+    
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  width: 50%;
+    border-radius: 30px;
+}
+ul{
+    font-size: 1rem;
+    color: #fff;
+    margin-top: 100px;
+    padding-left: 500px;
+    
+}
+#p{
+    color: #fff;
+    padding-left: 500px;
+}
+
+         
+button {
+    background-image: linear-gradient(to right, #2b5876 0%, #4e4376  51%, #2b5876  100%);
+    margin-left: 400px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    
+    
+  
+  }
+
+  button:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+  #migrantbirds{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: #fff;
+    font-size: 2rem;
+    margin-top: 50px;
+  }
+ 
+     
+
+
+
