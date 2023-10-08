@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Finding HTML element bt Class Name</h2>
+    <p>Hello Script</p>
+    <p class="intro">This DOM is very useful</p>
+    <p class="intro">This example demonstrate the getElementByClassName Method</p>
+    <p id="demo"></p>
+    <script>
+        var x = document.getElementsByClassName("intro")
+        document.getElementById("demo").innerHTML = "this text is from paragraph is index (0) eith class is 'intro' "
+         + x[0].innerHTML
+    </script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Finding HTML element bt ID</h2>
+    <p id="intro">Hello Script</p>
+    <p>This example demonstrate the getElementById Method</p>
+    <p id="demo"></p>
+    <script>
+        var myelement = document.getElementById("intro")
+        document.getElementById("demo").innerHTML = "this text is from paragraph is " + myelement.innerHTML
+    </script>
+</body>
+</html>

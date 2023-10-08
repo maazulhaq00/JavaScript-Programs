@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="birds"></p>
+    <script>
+        var toconvert = {"name": "parrot", "species": "bird", "type": "migrate"}
+        var tojson = JSON.stringify(toconvert)
+        document.getElementById("birds").innerHTML = tojson
+    </script>
+</body>
+</html>
