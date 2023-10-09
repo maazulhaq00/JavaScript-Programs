@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="Writing Tools">
+        <li>Pen</li>
+        <li>Pencil</li>
+        <li id="cp">Color Pencil</li>
+    </ul>
+    <p>Click The Button To Delete An Item From The List</p>
+    <button onclick="mymethod()">Delete</button> 
+</body>
+<script>
+    function mymethod(){
+        var ele = document.getElementById("cp");
+        ele.parentNode.removeChild(ele)
+    }
+</script>
+</html>
