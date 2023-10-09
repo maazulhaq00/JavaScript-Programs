@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem One</title>
+</head>
+<body>
+    <a href="" onclick="getSport(this)" data-sport-name="Football">Ronaldo</a>
+    <a href="" onclick="getSport(this)" data-sport-name="Tennis">Federer</a>    
+</body>
+<script>
+    function getSport(sport){
+        var sportname = sport.getAttribute("data-sport-name");
+        alert(sportname)
+    }
+</script>
+</html>
