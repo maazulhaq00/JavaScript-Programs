@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Changing Values By Style Method</h1>
+    <table  border="1" width="100%">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th colspan="2">Action</th>
+        </tr>
+        <tr>
+            <td>Ali</td>
+            <td>20</td>
+            <td>ali123@gmail.com</td>
+            <td>123456</td>
+            <td>Student</td>
+        </tr>
+        <tr>
+            <td>Sarah</td>
+            <td>16</td>
+            <td>sarah123@gmail.com</td>
+            <td>123456789</td>
+            <td>Student</td>
+        </tr>
+    </table>
+    <br>
+    <button onclick="change()">Change</button>
+</body>
+<script>
+    function change() {
+        let myTable = document.getElementsByTagName("table")[0]
+
+        myTable.style.border = "2px dashed grey"
+        myTable.style.textAlign = "center"
+        myTable.style.padding = "10px"
+        myTable.style.fontSize = "20px"
+        myTable.style.margin = "6px"
+    }
+</script>
+</html>

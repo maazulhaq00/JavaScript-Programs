@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            font-size: larger;
+        }
+        p{
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Find Element By ID</h1>
+    <p id="examp">Hello Assingment!</p>
+    <button onclick="change()">Change Inner HTML</button>
+</body>
+<script>
+    function change(){
+        let myElement = document.getElementById("examp").innerHTML = "Good Morning / Good Evening..."
+    }
+    
+</script>
+</html>

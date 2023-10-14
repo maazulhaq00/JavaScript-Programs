@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Remove Child Element</h1>
+    <ul id="list">
+        <li>Apple</li>
+        <li>Mango</li>
+        <li>Grapes</li>
+    </ul>
+    <br>
+    <input type="text" name="text" id="text">
+    <button onclick="remove()">remove</button>
+</body>
+<script>
+    function remove() {
+        // let myList = document.createElement("li")
+        let text = document.getElementById("text").value
+
+        let liArr = document.getElementsByTagName("li")
+
+        for(let i in liArr){
+            if(liArr[i].childNodes[0].nodeValue == text){
+                liArr[i].remove()
+            }
+        }
+    }
+    
+</script>
+</html>

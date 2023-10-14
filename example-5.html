@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Querry Selector</h1>
+    <p class="first">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, perferendis. Voluptatibus,
+        rerum. Repellendus qui consequatur libero dignissimos cupiditate omnis, perspiciatis tenetur nostrum
+        praesentium, aut sequi at, cum ducimus quibusdam consequuntur.</p>
+    <button onclick="change()">Change</button>
+</body>
+<script>
+    function change() {
+        let myDocument = document.querySelectorAll("p.first")[0].innerHTML = "Lorem ipsum dolor sit amet, consectetur adipisicing elit.Praesentium, perferendis.Voluptatibus,rerum."
+    }
+</script>
+
+</html>
