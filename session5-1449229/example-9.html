@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Create Element Method</h1>
+    <ul id="list">
+        <li>Apple</li>
+        <li>Mango</li>
+        <li>Grapes</li>
+    </ul>
+    <br>
+    <input type="text" name="text" id="text">
+    <button onclick="addChild()">Add</button>
+</body>
+<script>
+    function addChild() {
+        let myList = document.createElement("li")
+        let text = document.getElementById("text").value
+        let result = document.createTextNode(text)
+        myList.appendChild(result);
+        let newList = document.getElementById("list").appendChild(myList)
+    }
+    
+</script>
+</html>

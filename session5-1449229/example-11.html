@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: black;
+            width: 150px;
+            height: 150px;
+            padding: 20px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>DOM</h1>
+    <div onmouseenter="mouseeneter(this)" onmouseout="mouseout(this)"></div>
+</body>
+<script>
+    function mouseeneter(obj){
+        obj.style.backgroundColor = "blue"
+    }
+    function mouseout(obj){
+        obj.style.backgroundColor = "black"
+    }
+</script>
+</html>

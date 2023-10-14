@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            font-size: larger;
+        }
+    </style>
+</head>
+<body>
+    <h1>Introduction To Data Access</h1>
+    <button onclick="getSport(this)" data-sport-name="Football Player">Ronaldo</button><br><br>
+    <button onclick="getSport(this)" data-sport-name="Cricket Player">Babar Azam</button>
+</body>
+<script>
+    function getSport(sport){
+        let sportName = sport.getAttribute ("data-sport-name");
+        alert (sportName)
+    }
+</script>
+</html>

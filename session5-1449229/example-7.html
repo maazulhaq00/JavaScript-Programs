@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Changing Values By Attribute Method</h1>
+
+    <img src="https://i.pinimg.com/originals/bf/95/34/bf953419d76bf747cba69b55e6e03957.png" alt="pikachu" width="600px" height="500px">
+<br><br>
+    <button onclick="change()">Change Image</button>
+</body>
+<script>
+    function change(){
+
+        let img1 = document.getElementsByTagName("img")[0]
+
+        img1.src = "https://media.istockphoto.com/id/1354441996/photo/image-of-open-antique-book-on-wooden-table-with-glitter-overlay.webp?b=1&s=170667a&w=0&k=20&c=O_VZbgONe4WTXPOEvwKYezhqFkzAXpr2g-lCdpdj5FU="
+
+        img1.setAttribute("height" , "500px" , "width" , "600px")
+    }
+</script>
+</html>
