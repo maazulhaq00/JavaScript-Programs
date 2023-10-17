@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Finding Html Elements By Tag Name</h3>
+    <p id="intro">Hello from Body!!!!</p>
+    <p>This example demonstrated the <b>getElementsByTagName</b> method.</p>
+    <p>It's mee<b> Maryam Haseeb.</b></p>
+    <p id="second"></p>
+</body>
+<script>
+    var x = document.getElementsByTagName("p");
+    document.getElementById("second").innerHTML="The text from the third paragraph is " + x[2].innerHTML;
+
+</script>
+</html>

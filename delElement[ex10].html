@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="cosmetics Products">
+     <li>Mascara</li>
+     <li>Lip Gloss</li>
+     <li>eye palette</li>
+     <li id="del">blush</li>
+    </ul> 
+    <p>click on the button to delete an item</p>
+    <button onclick="Button()">Delete</button>
+ </body>
+ <script>
+     function Button() {
+     var Del = document.getElementById("del");
+     Del.parentNode.removeChild(Del)}
+ </script>
+</html>

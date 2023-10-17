@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Finding Html Elements By Id</h3>
+    <p id="intro">Hello from Body!!!!</p>
+    <p>This example demonstrated the <b>getElementById</b> method.</p>
+    <p id="second"></p>
+</body>
+<script>
+    var newElement = document.getElementById("intro");
+    document.getElementById("second").innerHTML="The text from the intro paragraph is " + newElement.innerHTML;
+
+</script>
+</html>
