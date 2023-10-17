@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <body>
+        <h3>Finding Html Elements By Class Name</h3>
+        <p class="intro">Hello from Body!!!!</p>
+        <p>This example demonstrated the <b>getElementsByClassName</b> method.</p>
+        <p>It's mee<b> Maryam Haseeb.</b> learning how to change inner HTML by Class Name.</p>
+        <p class="second"></p>
+    </body>
+    <script>
+        var x = document.getElementsByClassName("p");
+        document.getElementsByClassName("second").innerHTML="The text from the third paragraph is " + x[2].innerHTML;
+    
+    </script>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Finding Html Elements By Query selector</h3>
+    <p class="intro">Hello from Body!!!!</p>
+    <p>This example demonstrated the <b>Query selector</b> method.</p>
+    <p>It's mee<b> Maryam Haseeb.</b></p>
+    <p id="second"></p>
+</body>
+<script>
+    var x = document.querySelectorAll("p.intro");
+    document.getElementById("second").innerHTML="The text from the third paragraph is " + x[0].innerHTML;
+
+</script>
+</html>

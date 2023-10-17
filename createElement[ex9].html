@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <ul id="cosmetics Products">
+    <li>Mascara</li>
+    <li>Lip Gloss</li>
+    <li>eye palette</li>
+    <li>blush</li>
+   </ul> 
+   <p>click on the button to append an item</p>
+   <button onclick="appendchild()">Append</button>
+</body>
+<script>
+    function appendchild(){
+    var newproduct = document.createElement("li");
+    var newproductname = document.createTextNode("Matte Lipstick");
+    newproduct.appendChild(newproductname);
+    document.getElementById("cosmetics Products").appendChild(newproduct);}
+</script>
+</html>
